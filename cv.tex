@@ -157,7 +157,7 @@
 
 %%%% PAGES 2--9 NUMBERING:
 %% These two lines put page number in upper-right corner of pages 2--end
-\rhead{Pavlic, p.~\arabic{page} of \protect\pageref*{LastPage}}   % +LP
+\rhead{Jensen-Urstad, p.~\arabic{page} of \protect\pageref*{LastPage}}   % +LP
 %\rhead{Pavlic, p.~\arabic{page}}                                 % -LP
 
 %% These lines put page number in bottom (center) of pages 2--end
@@ -391,7 +391,7 @@ Sweden}
 \parbox{\rcollength}{%
 \emph{Mobile:} +46-70-0222948\\
 \emph{E-mail:} \email{bjorn.jensen.urstad@gmail.com}\\
-\emph{WWW:} \href{http://www.bernie.com/}{http://www.bolg.se/}\\
+%%\emph{WWW:} \href{http://www.bernie.com/}{http://www.bolg.se/}\\
 \emph{Github:} \href{https://github.com/b3rnie/}{https://github.com/b3rnie/}}
 
 \end{tabular}
@@ -423,9 +423,9 @@ software archi\-tecture, message queues
 \section{Availability}
 
 \begin{loneinnerlist}
-    \item Start time is negotiable; may be possible to start immediately
-    \item Geographic location is flexible, but there is preference
-        for Stockholm, Sweden
+  %%\item Start time is negotiable; may be possible to start immediately
+\item Geographic location is flexible, but there is preference
+  for Stockholm, Sweden
 \end{loneinnerlist}
 
 % \section{Citizenship}
@@ -458,7 +458,21 @@ Stockholm, Sweden
 
 \section{Professional Experience}
 
-\href{http://www.klarna.com/}{\textbf{Klarna}},
+\href{http://www.kivra.se/}{\textbf{Kivra AB}},
+Stockholm, Sweden
+\begin{outerlist}
+\item[] \textit{Developer}%
+  \hfill \textbf{March 2013 -}
+  \begin{innerlist}
+    \item
+      Business features, architecture, refactoring and general development
+      of Kivra's system.
+  \end{innerlist}
+\end{outerlist}
+
+\halfblankline
+
+\href{http://www.klarna.com/}{\textbf{Klarna AB}},
 Stockholm, Sweden
 \begin{outerlist}
 \item[] \textit{Developer}%
@@ -471,7 +485,9 @@ Stockholm, Sweden
     This involved writing a framework to allow easy transformation
     of keys/values between two very different databses with different
     availability requirements, adding vector clocks to an existing database
-    schema and mechanisms to transport/sync data over RabbitMQ
+    schema and mechanisms to transport/sync data over RabbitMQ.
+    The databases are the core of a business with a monthly revenue of
+    200 million USD
   \item
     Architecture and implementation of the alpha version of Klarna's checkout
   \item
