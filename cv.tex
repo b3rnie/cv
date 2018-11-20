@@ -3,7 +3,11 @@
 % Don't like 10pt? Try 11pt or 12pt
 \documentclass[10pt]{article}
 
-\usepackage{times}
+% \usepackage{times}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+
 \renewcommand{\familydefault}{\sfdefault}
 
 %% This makes font encoding use 8 bits instead of the default 7.
@@ -217,7 +221,7 @@
 
 \begin{document}
 \thispagestyle{plain}
-\makeheading[\emph{Curriculum vitae}]{Bjorn Jensen-Urstad}
+\makeheading[\emph{Curriculum vitae}]{Björn Jensen-Urstad}
 
 \section{Contact Information}
 
@@ -241,7 +245,7 @@
 
 % Address box
 \parbox{\textwidth-\rcollength-\spacewidth}{%
-Bjorn Jensen-Urstad\\
+Björn Jensen-Urstad\\
 Skeppargatan 96\\
 115 30 Stockholm\\
 Sweden}
@@ -291,7 +295,7 @@ Stockholm, Sweden
 
 \halfblankline
 
-\textbf{Hersby gymnasium}, Lidingo, Sweden
+\textbf{Hersby gymnasium}, Lidingö, Sweden
 \begin{outerlist}
 \item[] Upper secondary school, 1997-2000
 \end{outerlist}
@@ -313,7 +317,7 @@ Stockholm
     Implemented on AWS using S3, SQS, Athena, Prometheus, Grafana and NodeJS.
   \item
     Worked on scaling a .NET system and making it possible to run parts of it on
-    a cluster if needed. Using Scala, Apache Kafka, Cassandra and Docker.
+    a cluster if needed. Using Scala, Netty, Apache Kafka, Cassandra and Docker.
   \item
     Implemented a subscription based license model/billing system where servers
     report usage and are charged based on that. Resulted in a more predictable
